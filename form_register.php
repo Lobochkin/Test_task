@@ -31,7 +31,7 @@
         <div id="form_register">
             <h3>Форма регистрации</h3>
  
-            <form action="register.php" method="post" name="form_register">
+            <form action="/site/test/register.php" method="post" name="form_register">
                 <div class="form-group">
                     <label for="form-group__name">Имя:</label>
                     <input id="form-group__name" class="form-control" type="text" name="first_name" required="required">

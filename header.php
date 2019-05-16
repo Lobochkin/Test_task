@@ -4,7 +4,7 @@
     if (isset($_GET["logout"])) {
             session_destroy();
             unset($_GET["logout"]);
-            header('Location:/?');            
+            header('Location:/site/test/?');            
     }
 ?>
 <!doctype html>
@@ -24,9 +24,10 @@
             <header class="header" id="header"> 
                 <h2 class="header__main-title">Тестовое задание</h2>
 <?php //проверяем на какой странице мы находимся, если на главной то убираем ссылку "главная"
-if ($_SERVER['REQUEST_URI'] == "/?" || $_SERVER['REQUEST_URI'] == "/index.php") { 
+
+if ($_SERVER['REQUEST_URI'] == "/site/test/?" || $_SERVER['REQUEST_URI'] == "/site/test/index.php" || $_SERVER['REQUEST_URI'] == "/site/test/") { 
 } else { ?>
-                <a class="header__link" href="/index.php">Главная страница</a> 
+                <a class="header__link" href="/site/test/index.php">Главная страница</a> 
 <?php } ?>
                 <ul class="header__block-button" id="auth_block"> 
 
@@ -36,17 +37,17 @@ if ($_SERVER['REQUEST_URI'] == "/?" || $_SERVER['REQUEST_URI'] == "/index.php") 
         // если нет, то выводим блок с ссылками на страницу регистрации и авторизации
 ?>
                     <li id="link_register">
-                        <a class="btn btn-primary" href="/form_register.php">Регистрация</a>
+                        <a class="btn btn-primary" href="/site/test/form_register.php">Регистрация</a>
                     </li>     
                     <li id="link_auth">
-                        <a class="btn btn-info" href="/form_auth.php">Авторизация</a>
+                        <a class="btn btn-info" href="/site/test/form_auth.php">Авторизация</a>
                     </li>
 <?php
     }else{
         //Если пользователь авторизован, то выводим ссылку Выход
 ?> 
                     <li id="link_logout">
-                        <a class="btn btn-warning" href="/?logout=yes">Выход</a>
+                        <a class="btn btn-warning" href="/site/test/index.php?logout=yes">Выход</a>
                     </li>
 <?php } ?>
                 </ul>

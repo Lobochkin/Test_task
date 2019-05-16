@@ -32,7 +32,7 @@
  
     <div id="form_auth">
         <h3>Форма авторизации</h3>
-        <form action="auth.php" method="post" name="form_auth">
+        <form action="/site/test/auth.php" method="post" name="form_auth">
             <div class="form-group">
                 <label for="form-group__email">E-mail:</label>
                 <input id="form-group__email" class="form-control" type="email" name="email" required="required"><br>

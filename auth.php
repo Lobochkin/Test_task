@@ -34,7 +34,7 @@
                     
                     //Возвращаем пользователя на страницу авторизации
                     header("HTTP/1.1 301 Moved Permanently");
-                    header("Location: " . "/form_auth.php");
+                    header("Location: " . "/site/test/form_auth.php");
 
                     //Останавливаем скрипт
                     exit();
@@ -45,7 +45,7 @@
                 
                 //Возвращаем пользователя на страницу регистрации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: " . "/form_register.php");
+                header("Location: " . "/site/test/form_register.php");
 
                 //Останавливаем скрипт
                 exit();
@@ -58,7 +58,7 @@
             
             //Возвращаем пользователя на страницу авторизации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . "/form_auth.php");
+            header("Location: " . "/site/test/form_auth.php");
 
             //Останавливаем скрипт
             exit();
@@ -79,7 +79,7 @@
                 
                 //Возвращаем пользователя на страницу регистрации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: " . "/form_auth.php");
+                header("Location: " . "/site/test/form_auth.php");
 
                 //Останавливаем скрипт
                 exit();
@@ -91,7 +91,7 @@
             
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . "/form_auth.php");
+            header("Location: " . "/site/test/form_auth.php");
 
             //Останавливаем скрипт
             exit();
@@ -107,7 +107,7 @@
             
             //Возвращаем пользователя на страницу регистрации
             header("HTTP/1.1 301 Moved Permanently");
-            header("Location: " . "/form_auth.php");
+            header("Location: " . "/site/test/form_auth.php");
 
             //Останавливаем скрипт
             exit();
@@ -122,7 +122,7 @@
 
                 //Возвращаем пользователя на главную страницу
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: " . "/index.php");
+                header("Location: " . "/site/test/index.php");
 
             }else{
                 
@@ -131,7 +131,7 @@
                 
                 //Возвращаем пользователя на страницу регистрации
                 header("HTTP/1.1 301 Moved Permanently");
-                header("Location: " . "/form_auth.php");
+                header("Location: " . "/site/test/form_auth.php");
 
                 //Останавливаем скрипт
                 exit();
@@ -141,5 +141,5 @@
         
 
     }else{
-        exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href="/"> главную страницу </a>.</p>");
+        exit("<p><strong>Ошибка!</strong> Вы зашли на эту страницу напрямую, поэтому нет данных для обработки. Вы можете перейти на <a href="/site/test/"> главную страницу </a>.</p>");
     }

@@ -52,6 +52,8 @@
 
   window.load(function (response) {
   createTable (response);
-  }, errorBlock);
+  }, function (errorMessage) {
+  errorBlock(errorMessage);
+  });
 
 })();
